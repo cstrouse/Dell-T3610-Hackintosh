@@ -8,11 +8,11 @@ This is based on his [X79 Catalina guide](https://github.com/mighildotcom/X79-Ha
 
 Clover EFI folder and `config.plist` required for a Dell Precision T3610 hackintosh running macOS Catalina 10.15.3.
 
-![20200320_121001.jpg](:/f376740df62046aeaa33ec76d3cc3f72)
+![20200320_121001](https://user-images.githubusercontent.com/849044/77206086-17116c80-6aee-11ea-9084-9c27b42e7dae.jpg)
 
 ## System Specs
 
-![Screen Shot 2020-03-20 at 12.11.07 PM.png](:/0422a486fac4410295201322c0355091)
+![Screen Shot 2020-03-20 at 12.11.07 PM.png](https://user-images.githubusercontent.com/849044/77206132-2f818700-6aee-11ea-9e46-8f005329db8c.png)
 
 | Part        | Model Number
 | ---         | ---
