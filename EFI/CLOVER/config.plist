@@ -137,6 +137,26 @@
 					<key>Replace</key>
 					<data>QdD//w==</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>HPET _CRS to XCRS Rename</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X0NSUwCK</data>
+					<key>Replace</key>
+					<data>WENSUwCK</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>TMR IRQ 0 Patch</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>IgEAeQA=</data>
+					<key>Replace</key>
+					<data>IgAAeQA=</data>
+				</dict>
 			</array>
 			<key>ReuseFFFF</key>
 			<false/>
@@ -148,6 +168,10 @@
 			<dict>
 				<key>Signature</key>
 				<string>DMAR</string>
+			</dict>
+			<dict>
+				<key>Signature</key>
+				<string>MATS</string>
 			</dict>
 		</array>
 		<key>FixHeaders</key>
