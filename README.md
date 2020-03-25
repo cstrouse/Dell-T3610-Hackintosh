@@ -16,8 +16,8 @@ Clover EFI folder and `config.plist` required for a Dell Precision T3610 hackint
 
 | Part        | Model Number
 | ---         | ---
-| CPU         | Xeon E5-2637 V2 (INCLUDE AppleIntelInfo.txt from darwindumper)
-| Motherboard | Dell 
+| CPU         | Xeon E5-2637 V2 @ 3.0 GHz (INCLUDE AppleIntelInfo.txt from darwindumper)
+| Motherboard | Dell 09M8Y8 Revision 3
 | BIOS        | A19
 | Chipset     | Intel C602/X79
 | Memory      | Micron 8GB DDR3-1333MHz Non-ECC x 4 (PN: 18KSF1G72PDZ-1G4E)
@@ -27,18 +27,20 @@ Clover EFI folder and `config.plist` required for a Dell Precision T3610 hackint
 | Bluetooth   | ASUS USB-BT400 (Firmware: v14 c4096)
 | Ethernet    | Intel 82579LM (onboard)
 | USB         | Renesas uPD720201 USB 3.0 Host Controller
-| Sound       | Realtek ALC280 (Layout ID: 3)
+| Sound       | Realtek ALC3220 (ALC280) (Layout ID: 3)
 | Keyboard    | Microsoft Surface (connected via Bluetooth)
 | Mouse       | Logitech M590 (connected using Logitech Unified receiver)
-| Clover      | 5105
+| Clover      | 5107
 
 ### BIOS Configuration
 
-- Secure Boot disabled
-- VT-D disabled
-- Disks set to AHCI mode (default is RAID)
-- Fast Boot set to _?_
-- Serial port disabled
+1. Reset to optimized defaults
+2. Secure Boot disabled
+3. Enable VT for Direct I/O disabled
+4. Disks set to AHCI mode (default is RAID)
+5. Fast Boot set to 'thorough'
+6. CPU XD support enabled
+7. TPM disabled
 
 ## Readme
 
@@ -48,8 +50,6 @@ Clover EFI folder and `config.plist` required for a Dell Precision T3610 hackint
 ## Before You Proceed
 
 You should modify the EFI (a lot) if your system specs are different. I use the settings for my motherboard. My system has a Renesas USB 3.0 controller which is a pain in the ass to get to work (have yet to figure that out but supposedly it's possible). Chances are you'll have a different CPU at the very least which may require some changes. If you're not using an NVIDIA GPU, expect a bunch of changes to be required, too.
-
-## BIOS Settings
 
 ## What Does Work
 
@@ -64,9 +64,7 @@ You should modify the EFI (a lot) if your system specs are different. I use the 
 
 ## What Doesn't Work
 
-- USB 3.0 (XHCI shows up in IOReg but don't havea USB 3.0 device to test)
-- Turbo Boost (needs work)
-- CPU Frequency Scaling (needs work)
+- USB 3.0 (XHCI shows up in IOReg but requires work to get Renesas controller working)
 
 ## How to create a bootable macOS Catalina USB install drive? (on MacOS)
 
