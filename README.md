@@ -36,7 +36,7 @@ Clover EFI folder and `config.plist` required for a Dell Precision T3610 hackint
 
 1. Reset to optimized defaults
 2. Secure Boot disabled
-3. Enable VT for Direct I/O disabled
+3. Enable VT for Direct I/O disabled (Virtualization Support can be enabled if you need it for Docker, etc)
 4. Disks set to AHCI mode (default is RAID)
 5. Fast Boot set to 'thorough'
 6. CPU XD support enabled
@@ -46,6 +46,11 @@ Clover EFI folder and `config.plist` required for a Dell Precision T3610 hackint
 
 - Read everything first and be careful
 - Tested on macOS Catalina 10.15.3 (vanilla)
+
+## Differences from the X79 guide
+
+- VirtualSMC
+- OCQuirks
 
 ## Before You Proceed
 
@@ -61,6 +66,7 @@ You should modify the EFI (a lot) if your system specs are different. I use the 
 - GPU
 - sound (Intel HDA and NVIDIA HDMI)
 - 4k display
+- Docker
 
 ## What Doesn't Work
 
