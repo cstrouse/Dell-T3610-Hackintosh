@@ -12,7 +12,7 @@ Clover EFI folder and `config.plist` required for a Dell Precision T3610 hackint
 
 ## System Specs
 
-![Screen Shot 2020-03-20 at 12.11.07 PM.png](https://user-images.githubusercontent.com/849044/77206132-2f818700-6aee-11ea-9e46-8f005329db8c.png)
+![Screen Shot 2020-04-10 at 12.06.53 PM](https://user-images.githubusercontent.com/849044/79016528-1df73200-7b24-11ea-88cf-55a20f674056.png)
 
 | Part        | Model Number
 | ---         | ---
@@ -26,7 +26,7 @@ Clover EFI folder and `config.plist` required for a Dell Precision T3610 hackint
 |             | Samsung 8GB DDR3-1333MHz Non-ECC x 4 (PN: M393B1K70DH0-CK0)
 | GPU         | ~~HP NVIDIA GK107GL Quadro K2000 2GB (ROM: v80.07.9b.00.07) - slot 1~~
 |             | MSI RX 570 GAMING X 8GB - slot 1
-| Storage     | PNY CS900 240GB SSD (Revision CS900J13)
+| Storage     | PNY CS900 240GB SSD (Revision CS900J13) x2
 | Bluetooth   | ASUS USB-BT400 (Firmware: v14 c4096)
 | Ethernet    | Intel 82579LM (onboard)
 | USB         | Renesas uPD720201 USB 3.0 Host Controller
@@ -49,7 +49,7 @@ Clover EFI folder and `config.plist` required for a Dell Precision T3610 hackint
 ## Readme
 
 - Read everything first and be careful
-- Tested on macOS Catalina 10.15.3 (vanilla)
+- Tested on macOS Catalina 10.15.4 (vanilla)
 
 ## Differences from the X79 guide
 
@@ -71,6 +71,10 @@ You should modify the EFI (a lot) if your system specs are different. I use the 
 - sound (Intel HDA and ~~NVIDIA~~ Radeon HDMI)
 - 4k display
 - Docker
+
+## macOS Updates
+
+- 10.15.3 -> 10.15.4 worked without any issues
 
 ## What Doesn't Work
 
