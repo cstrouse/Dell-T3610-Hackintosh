@@ -17,12 +17,15 @@ Clover EFI folder and `config.plist` required for a Dell Precision T3610 hackint
 | Part        | Model Number
 | ---         | ---
 | CPU         | Xeon E5-2637 V2 @ 3.0 GHz (INCLUDE AppleIntelInfo.txt from darwindumper)
+| PSU         | ~~Dell 80+ Gold 425W~~
+|             | Dell 80+ Gold 685W
 | Motherboard | Dell 09M8Y8 Revision 3
 | BIOS        | A19
 | Chipset     | Intel C602/X79
 | Memory      | Micron 8GB DDR3-1333MHz Non-ECC x 4 (PN: 18KSF1G72PDZ-1G4E)
 |             | Samsung 8GB DDR3-1333MHz Non-ECC x 4 (PN: M393B1K70DH0-CK0)
-| GPU         | HP NVIDIA GK107GL Quadro K2000 2GB (ROM: v80.07.9b.00.07) - slot 1
+| GPU         | ~~HP NVIDIA GK107GL Quadro K2000 2GB (ROM: v80.07.9b.00.07) - slot 1~~
+|             | MSI RX 570 GAMING X 8GB - slot 1
 | Storage     | PNY CS900 240GB SSD (Revision CS900J13)
 | Bluetooth   | ASUS USB-BT400 (Firmware: v14 c4096)
 | Ethernet    | Intel 82579LM (onboard)
@@ -41,6 +44,7 @@ Clover EFI folder and `config.plist` required for a Dell Precision T3610 hackint
 5. Fast Boot set to 'thorough'
 6. CPU XD support enabled
 7. TPM disabled
+8. Legacy ROM disabled (required for the Quadro but not for the Radeon)
 
 ## Readme
 
@@ -64,7 +68,7 @@ You should modify the EFI (a lot) if your system specs are different. I use the 
 - ethernet (onboard)
 - bluetooth (added via USB dongle)
 - GPU
-- sound (Intel HDA and NVIDIA HDMI)
+- sound (Intel HDA and ~~NVIDIA~~ Radeon HDMI)
 - 4k display
 - Docker
 
