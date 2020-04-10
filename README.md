@@ -4,7 +4,7 @@ If this helps you, thank [mighil](https://github.com/mighildotcom) since he did 
 
 This is based on his [X79 Catalina guide](https://github.com/mighildotcom/X79-Hackintosh-Catalina). Before finding this I had a usable machine but performance wasn't great. I improved things a bit by switching to Virtual SMC and OcQuirks; the X79 guide took me the rest of the way (sans USB 3.0).
 
-# Budget Dell Precision T3610 Xeon Build (~$250)
+# Budget Dell Precision T3610 Xeon Build (~$350)
 
 Clover EFI folder and `config.plist` required for a Dell Precision T3610 hackintosh running macOS Catalina 10.15.3.
 
@@ -87,7 +87,7 @@ You should modify the EFI (a lot) if your system specs are different. I use the 
 
 ## RX 570 Installation Gotchas
 
-- It's not likely to work if you have the 425W PSU, so make sure to upgrade to the 685W version at least.
+- It's not likely to work if you have the 425W PSU, so make sure to upgrade to the 685W version at least. I paid $20 for the 685W PSU upgrade and the 8-pin PCI express power cable together at a local surplus dealer.
 - The side panel won't close until you remove the brace with the rubber strip beneath the latch mechanism.
 - You'll probably want to get a PCI express GPU power cable with a 90 degree plug so you have more clearance between the side panel and the cable.
 - You'll either need to get the OEM Dell GPU power cable from the T76XX series or if you're like me (single CPU motherboard in the dual CPU case) then you can use an EPS to PCI express cable to power the GPU. I used the 8-pin to 8-pin OEM Dell cable but also bought a Supermicro EPS to 8-pin PCI express GPU cable just in case.

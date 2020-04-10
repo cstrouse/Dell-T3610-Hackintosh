@@ -230,6 +230,8 @@
 	<dict>
 		<key>UseARTFrequency</key>
 		<false/>
+		<key>Type</key>
+		<string>0x0A01</string>
 	</dict>
 	<key>Devices</key>
 	<dict>
@@ -263,7 +265,6 @@
 		<key>Hide</key>
 		<array>
 			<string>Preboot</string>
-			<string>Recovery</string>
 		</array>
 		<key>Language</key>
 		<string>en-US:0</string>
