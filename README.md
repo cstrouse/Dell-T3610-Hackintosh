@@ -22,8 +22,8 @@ Clover EFI folder and `config.plist` required for a Dell Precision T3610 hackint
 | Motherboard | Dell 09M8Y8 Revision 3
 | BIOS        | A19
 | Chipset     | Intel C602/X79
-| Memory      | Micron 8GB DDR3-1333MHz Non-ECC x 4 (PN: 18KSF1G72PDZ-1G4E)
-|             | Samsung 8GB DDR3-1333MHz Non-ECC x 4 (PN: M393B1K70DH0-CK0)
+| Memory      | Micron 8GB DDR3-1333MHz ECC x 4 (PN: 18KSF1G72PDZ-1G4E)
+|             | Samsung 8GB DDR3-1333MHz ECC x 4 (PN: M393B1K70DH0-CK0)
 | GPU         | ~~HP NVIDIA GK107GL Quadro K2000 2GB (ROM: v80.07.9b.00.07) - slot 1~~
 |             | MSI RX 570 GAMING X 8GB - slot 1
 | Storage     | PNY CS900 240GB SSD (Revision CS900J13) x2
