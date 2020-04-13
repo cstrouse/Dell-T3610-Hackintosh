@@ -90,5 +90,5 @@ You should modify the EFI (a lot) if your system specs are different. I use the 
 - It's not likely to work if you have the 425W PSU, so make sure to upgrade to the 685W version at least. I paid $20 for the 685W PSU upgrade and the 8-pin PCI express power cable together at a local surplus dealer.
 - The side panel won't close until you remove the brace with the rubber strip beneath the latch mechanism.
 - You'll probably want to get a PCI express GPU power cable with a 90 degree plug so you have more clearance between the side panel and the cable.
-- You'll either need to get the OEM Dell GPU power cable from the T76XX series or if you're like me (single CPU motherboard in the dual CPU case) then you can use an EPS to PCI express cable to power the GPU. I used the 8-pin to 8-pin OEM Dell cable but also bought a Supermicro EPS to 8-pin PCI express GPU cable just in case.
+- You'll either need to get the OEM Dell GPU power cable from the T76XX series or if you're like me (single CPU motherboard in the dual CPU case) then you can use an EPS to PCI express cable to power the GPU. I used the 8-pin to 8-pin OEM Dell cable (Dell PN: 8RFPM) but also bought a Supermicro EPS to 8-pin PCI express GPU cable just in case.
 - If you used legacy mode in your BIOS for a Quadro, switching it to UEFI-only makes things look better with the Radeon.
