@@ -65,6 +65,10 @@ You should modify the EFI (a lot) if your system specs are different. I use the 
 - App Store
 - iMessage (works after SMBIOS edits)
 - Quicktime (including screen recording)
+- DRM (FairPlay 1.x/2.x/3.x/4.x)
+  - Apple TV+
+  - Amazon Prime Video
+  - Netflix
 - ethernet (onboard)
 - bluetooth (added via USB dongle)
 - GPU
