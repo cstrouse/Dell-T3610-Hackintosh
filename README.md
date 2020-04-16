@@ -12,7 +12,7 @@ Clover EFI folder and `config.plist` required for a Dell Precision T3610 hackint
 
 ## System Specs
 
-![Screen Shot 2020-04-10 at 12.06.53 PM](https://user-images.githubusercontent.com/849044/79016528-1df73200-7b24-11ea-88cf-55a20f674056.png)
+![Screen Shot 2020-04-16 at 1.57.19 AM](https://user-images.githubusercontent.com/849044/79436918-58c6f300-7f86-11ea-896b-062867b4aae1.png)
 
 | Part        | Model Number
 | ---         | ---
@@ -33,7 +33,7 @@ Clover EFI folder and `config.plist` required for a Dell Precision T3610 hackint
 | Sound       | Realtek ALC3220 (ALC280) (Layout ID: 3)
 | Keyboard    | Microsoft Surface (connected via Bluetooth)
 | Mouse       | Logitech M590 (connected using Logitech Unified receiver)
-| Clover      | 5107
+| Clover      | 5111
 
 ### BIOS Configuration
 
@@ -58,7 +58,7 @@ Clover EFI folder and `config.plist` required for a Dell Precision T3610 hackint
 
 ## Before You Proceed
 
-You should modify the EFI (a lot) if your system specs are different. I use the settings for my motherboard. My system has a Renesas USB 3.0 controller which is a pain in the ass to get to work (have yet to figure that out but supposedly it's possible). Chances are you'll have a different CPU at the very least which may require some changes. If you're not using an NVIDIA GPU, expect a bunch of changes to be required, too.
+You should modify the EFI (a lot) if your system specs are different. I use the settings for my motherboard. My system has a Renesas USB 3.0 controller which is a pain in the ass to get to work (have yet to figure that out but supposedly it's possible). Chances are you'll have a different CPU at the very least which may require some changes. If you're not using an ~~NVIDIA~~ AMD GPU, expect a bunch of changes to be required, too.
 
 ## What Does Work
 
