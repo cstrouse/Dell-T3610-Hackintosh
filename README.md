@@ -92,3 +92,5 @@ You should modify the EFI (a lot) if your system specs are different. I use the 
 - You'll probably want to get a PCI express GPU power cable with a 90 degree plug so you have more clearance between the side panel and the cable.
 - You'll either need to get the OEM Dell GPU power cable from the T76XX series or if you're like me (single CPU motherboard in the dual CPU case) then you can use an EPS to PCI express cable to power the GPU. I used the 8-pin to 8-pin OEM Dell cable (Dell PN: 8RFPM) but also bought a Supermicro EPS to 8-pin PCI express GPU cable just in case.
 - If you used legacy mode in your BIOS for a Quadro, switching it to UEFI-only makes things look better with the Radeon.
+
+![dell-gpu-power-cable](https://user-images.githubusercontent.com/849044/79437357-edc9ec00-7f86-11ea-9ff7-a2bf03c6dfc2.jpg)
