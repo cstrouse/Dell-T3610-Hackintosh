@@ -12,11 +12,11 @@ Clover EFI folder and `config.plist` required for a Dell Precision T3610 hackint
 
 ## System Specs
 
-![Screen Shot 2020-04-16 at 1.57.19 AM](https://user-images.githubusercontent.com/849044/79436918-58c6f300-7f86-11ea-896b-062867b4aae1.png)
+![Screen Shot 2020-04-17 at 7 54 53 PM](https://user-images.githubusercontent.com/849044/79626550-d05f6400-80e5-11ea-8757-69311dc8f5f1.png)
 
 | Part        | Model Number
 | ---         | ---
-| CPU         | Xeon E5-2637 V2 @ 3.0 GHz (INCLUDE AppleIntelInfo.txt from darwindumper)
+| CPU         | ~~Xeon E5-2637 V2 @ 3.0 GHz~~ Xeon E5-1620v2 @ 3.7GHz (Quad-Core)
 | PSU         | ~~Dell 80+ Gold 425W~~
 |             | Dell 80+ Gold 685W
 | Motherboard | Dell 09M8Y8 Revision 3
