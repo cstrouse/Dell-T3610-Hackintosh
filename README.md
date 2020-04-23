@@ -1,8 +1,8 @@
 **Note: You're nothing but an a-hole if you sell EFI folder (config) that's readily available for free.** -- *stole this from mighil because it's right on*
 
-If this helps you, thank [mighil](https://github.com/mighildotcom) since he did the hard work!
+If this helps you, thank [mighil](https://github.com/mighildotcom) and [maldon](https://olarila.com) since they did the hard work (and the many others who gave us Clover, kexts, etc)!
 
-This is based on his [X79 Catalina guide](https://github.com/mighildotcom/X79-Hackintosh-Catalina). Before finding this I had a usable machine but performance wasn't great. I improved things a bit by switching to Virtual SMC and OcQuirks; the X79 guide took me the rest of the way (sans USB 3.0).
+This is based on his [X79 Catalina guide](https://github.com/mighildotcom/X79-Hackintosh-Catalina). Before finding this I had a usable machine but performance wasn't great. I improved things a bit by switching to Virtual SMC and ~~OcQuirks~~; the X79 guide took me the rest of the way (sans USB 3.0).
 
 # Budget Dell Precision T3610 Xeon Build (~$350)
 
@@ -30,6 +30,7 @@ Clover EFI folder and `config.plist` required for a Dell Precision T3610 hackint
 | Bluetooth   | ASUS USB-BT400 (Firmware: v14 c4096)
 | Ethernet    | Intel 82579LM (onboard)
 | USB         | Renesas uPD720201 USB 3.0 Host Controller
+|             | Inateck KT4006 2-port PCI-E USB 3.0 Express Card
 | Sound       | Realtek ALC3220 (ALC280) (Layout ID: 3)
 | Keyboard    | Microsoft Surface (connected via Bluetooth)
 | Mouse       | Logitech M590 (connected using Logitech Unified receiver)
@@ -54,7 +55,7 @@ Clover EFI folder and `config.plist` required for a Dell Precision T3610 hackint
 ## Differences from the X79 guide
 
 - VirtualSMC
-- OCQuirks
+- ~~OCQuirks~~
 
 ## Before You Proceed
 
@@ -75,6 +76,7 @@ You should modify the EFI (a lot) if your system specs are different. I use the 
 - sound (Intel HDA and ~~NVIDIA~~ Radeon HDMI)
 - 4k display
 - Docker
+- USB 3.0 (Inateck PCI-e card doesn't show up but works; probably need my patched DSDT updated for this to show up properly)
 
 ## macOS Updates
 
