@@ -34,7 +34,7 @@ Clover EFI folder and `config.plist` required for a Dell Precision T3610 hackint
 | Sound       | Realtek ALC3220 (ALC280) (Layout ID: 3)
 | Keyboard    | Microsoft Surface (connected via Bluetooth)
 | Mouse       | Logitech M590 (connected using Logitech Unified receiver)
-| Clover      | 5111
+| Clover      | 5114
 
 ### BIOS Configuration
 
@@ -56,10 +56,11 @@ Clover EFI folder and `config.plist` required for a Dell Precision T3610 hackint
 
 - VirtualSMC
 - ~~OCQuirks~~
+- Patched DSDT (from maldon @ olarila)
 
 ## Before You Proceed
 
-You should modify the EFI (a lot) if your system specs are different. I use the settings for my motherboard. My system has a Renesas USB 3.0 controller which is a pain in the ass to get to work (have yet to figure that out but supposedly it's possible). Chances are you'll have a different CPU at the very least which may require some changes. If you're not using an ~~NVIDIA~~ AMD GPU, expect a bunch of changes to be required, too.
+You should modify the EFI (a lot) if your system specs are different. I use the settings for my motherboard. My system has a Renesas USB 3.0 controller which is a pain in the ass to get to work (have yet to figure that out but supposedly it's possible). Chances are you'll have a different CPU at the very least which may require some changes. If you're not using an ~~NVIDIA~~ AMD GPU, expect a bunch of changes to be required, too. You'll also need to add SMBIOS information (serial number, board serial number, UUID) as they've been removed from my `config.plist` to protect my Apple ID.
 
 ## What Does Work
 
@@ -77,14 +78,17 @@ You should modify the EFI (a lot) if your system specs are different. I use the 
 - 4k display
 - Docker
 - USB 3.0 (Inateck PCI-e card doesn't show up but works; probably need my patched DSDT updated for this to show up properly)
+- CPU Power Management
 
 ## macOS Updates
 
 - 10.15.3 -> 10.15.4 worked without any issues
 
-## What Doesn't Work
+## What Doesn't Work (or hasn't been tested)
 
 - USB 3.0 (XHCI shows up in IOReg but requires work to get Renesas controller working)
+- Sidecar
+- sleep
 
 ## How to create a bootable macOS Catalina USB install drive? (on MacOS)
 
