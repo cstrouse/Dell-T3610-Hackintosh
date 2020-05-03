@@ -104,3 +104,6 @@ You should modify the EFI (a lot) if your system specs are different. I use the 
 - If you used legacy mode in your BIOS for a Quadro, switching it to UEFI-only makes things look better with the Radeon.
 
 ![dell-gpu-power-cable](https://user-images.githubusercontent.com/849044/79437357-edc9ec00-7f86-11ea-9ff7-a2bf03c6dfc2.jpg)
+
+## If this helped you get your machine working or saved you time, consider sending a small donation to help me continue improving this and updating it over time via CashApp
+![$CaseyStrouse](https://user-images.githubusercontent.com/849044/80915564-f735b100-8d07-11ea-8654-bfc37fe0baa8.png)
