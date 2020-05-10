@@ -33,7 +33,7 @@ Clover EFI folder and `config.plist` required for a Dell Precision T3610 hackint
 |             | Inateck KT4006 2-port PCI-E USB 3.0 Express Card
 | Sound       | Realtek ALC3220 (ALC280) (Layout ID: 3)
 | Keyboard    | ~~Microsoft Surface (connected via Bluetooth)~~
-|.            | Logitech MX Keys (connected via Bluetooth)
+|             | Logitech MX Keys (connected via Bluetooth)
 | Mouse       | Logitech M590 (connected using Logitech Unified receiver)
 | Clover      | 5116
 
