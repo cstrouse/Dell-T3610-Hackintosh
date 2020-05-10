@@ -1,68 +1,28 @@
 
-Clover EFI installer log - Wed Apr 22 13:52:51 PDT 2020
-Installer version: r5114 EFI bootloader
+Clover EFI installer log - Sun May 10 08:15:09 PDT 2020
+Installer version: r5116 (commit: 8f5a4616b) EFI bootloader
 ======================================================
 /dev/disk0 (internal, physical):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
    0:      GUID_partition_scheme                        *240.1 GB   disk0
    1:                        EFI EFI                     209.7 MB   disk0s1
-   2:                 Apple_APFS Container disk3         239.8 GB   disk0s2
+   2:                 Apple_APFS Container disk1         239.8 GB   disk0s2
 
-/dev/disk1 (internal, physical):
+/dev/disk1 (synthesized):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:      GUID_partition_scheme                        *240.1 GB   disk1
-   1:                        EFI EFI                     209.7 MB   disk1s1
-   2:                 Apple_APFS Container disk4         239.8 GB   disk1s2
-
-/dev/disk2 (internal, physical):
-   #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:      GUID_partition_scheme                        *500.1 GB   disk2
-   1:                        EFI NO NAME                 629.1 MB   disk2s1
-   2:           Linux Filesystem Untitled                1.1 GB     disk2s2
-   3:                  Linux LVM                         498.4 GB   disk2s3
-
-/dev/disk3 (synthesized):
-   #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:      APFS Container Scheme -                      +239.8 GB   disk3
+   0:      APFS Container Scheme -                      +239.8 GB   disk1
                                  Physical Store disk0s2
-   1:                APFS Volume Untitled - Data         203.2 GB   disk3s1
-   2:                APFS Volume Preboot                 82.1 MB    disk3s2
-   3:                APFS Volume Recovery                528.1 MB   disk3s3
-   4:                APFS Volume Untitled                11.2 GB    disk3s4
-   5:                APFS Volume VM                      1.1 MB     disk3s5
+   1:                APFS Volume Untitled - Data         197.3 GB   disk1s1
+   2:                APFS Volume Preboot                 82.1 MB    disk1s2
+   3:                APFS Volume Recovery                528.1 MB   disk1s3
+   4:                APFS Volume Untitled                11.2 GB    disk1s4
+   5:                APFS Volume VM                      4.3 GB     disk1s5
 
-/dev/disk4 (synthesized):
-   #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:      APFS Container Scheme -                      +239.8 GB   disk4
-                                 Physical Store disk1s2
-   1:                APFS Volume MISC                    16.2 GB    disk4s1
-   2:                APFS Volume Preboot                 44.6 MB    disk4s2
-   3:                APFS Volume Recovery                510.4 MB   disk4s3
-   4:                APFS Volume VM                      68.7 GB    disk4s4
-
-/dev/disk5 (internal, physical):
-   #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:                                                   *33.8 GB    disk5
-
-/dev/disk6 (internal, physical):
-   #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:                            Untitled               *389.5 GB   disk6
-
-/dev/disk7 (internal, physical):
-   #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:                            Untitled               *75.2 GB    disk7
-
-/dev/disk8 (external, physical):
-   #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:      GUID_partition_scheme                        *15.7 GB    disk8
-   1:                        EFI EFI                     209.7 MB   disk8s1
-   2:       Microsoft Basic Data CLOVER TEST             15.5 GB    disk8s2
-
-Target volume /Volumes/Untitled on disk3 is APFS on physical store disk0s2
+Target volume /Volumes/Untitled on disk1 is APFS on physical store disk0s2
 ======================================================
 Backing up EFI files
 
-Backing up /Volumes/Untitled/EFIROOTDIR/EFI folder to /Volumes/Untitled/EFI-Backups/r5112/2020-04-22-13h52/EFI
+Backing up /Volumes/Untitled/EFIROOTDIR/EFI folder to /Volumes/Untitled/EFI-Backups/r5112/2020-05-10-08h15/EFI
 ======================================================
 Installing BootSectors/BootLoader
 

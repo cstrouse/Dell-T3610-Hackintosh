@@ -14,15 +14,9 @@
 			<false/>
 			<key>Fixes</key>
 			<dict>
-				<key>AddDTGP</key>
-				<false/>
-				<key>AddIMEI</key>
-				<false/>
 				<key>DeleteUnused</key>
 				<false/>
 				<key>FixDarwin7</key>
-				<false/>
-				<key>FixHDA</key>
 				<false/>
 				<key>FixHPET</key>
 				<false/>
@@ -143,6 +137,16 @@
 					<key>Replace</key>
 					<data>AAAAAAAAAAAAAAAAAAA=</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change EC0 to EC</string>
+					<key>Disabled</key>
+					<true/>
+					<key>Find</key>
+					<data>RUMwXw==</data>
+					<key>Replace</key>
+					<data>RUNfXw==</data>
+				</dict>
 			</array>
 			<key>ReuseFFFF</key>
 			<false/>
@@ -213,8 +217,6 @@
 		<false/>
 		<key>Timeout</key>
 		<integer>5</integer>
-		<key>XMPDetection</key>
-		<false/>
 	</dict>
 	<key>BootGraphics</key>
 	<dict>
@@ -233,14 +235,9 @@
 			<key>AFGLowPowerState</key>
 			<true/>
 			<key>Inject</key>
-			<string>No</string>
+			<integer>3</integer>
 			<key>ResetHDA</key>
 			<true/>
-		</dict>
-		<key>FakeID</key>
-		<dict>
-			<key>IMEI</key>
-			<string>0x01E3A8086</string>
 		</dict>
 		<key>LANInjection</key>
 		<false/>
@@ -258,6 +255,8 @@
 	</dict>
 	<key>GUI</key>
 	<dict>
+		<key>ConsoleMode</key>
+		<string>Max</string>
 		<key>EmbeddedThemeType</key>
 		<string>Dark</string>
 		<key>Hide</key>
@@ -268,6 +267,8 @@
 		</array>
 		<key>KbdPrevLang</key>
 		<true/>
+		<key>Language</key>
+		<string>en-US:0</string>
 		<key>Mouse</key>
 		<dict>
 			<key>DoubleClick</key>
@@ -279,15 +280,8 @@
 			<key>Speed</key>
 			<integer>8</integer>
 		</dict>
-		<key>Scan</key>
-		<dict>
-			<key>Entries</key>
-			<true/>
-			<key>Legacy</key>
-			<false/>
-			<key>Tool</key>
-			<true/>
-		</dict>
+		<key>ScreenResolution</key>
+		<string>3840×2160</string>
 		<key>ShowOptimus</key>
 		<true/>
 		<key>Theme</key>
@@ -304,9 +298,7 @@
 			<key>NVidia</key>
 			<false/>
 		</dict>
-		<key>LoadVBios</key>
-		<false/>
-		<key>RadeonDeInit</key>
+		<key>NvidiaSingle</key>
 		<false/>
 	</dict>
 	<key>KernelAndKextPatches</key>
@@ -370,20 +362,20 @@
 		<key>BooterConfig</key>
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
-		<string>0x3</string>
+		<string>0x67</string>
 		<key>MLB</key>
 		<string></string>
 		<key>ROM</key>
-		<string>UseMacAddr0</string>
+		<data>EjRWeKqq</data>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>03/07/2020</string>
+		<string>03/17/2020</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>IMP11.88Z.F000.B00.2003070211</string>
+		<string>IMP11.88Z.F000.B00.2003170108</string>
 		<key>Board-ID</key>
 		<string>Mac-7BA5B2D9E42DDD94</string>
 		<key>BoardManufacturer</key>
@@ -401,7 +393,7 @@
 		<key>ChassisType</key>
 		<string>0x09</string>
 		<key>EfiVersion</key>
-		<string>1037.100.355.0.0</string>
+		<string>1037.100.359.0.0</string>
 		<key>Family</key>
 		<string>iMac Pro</string>
 		<key>FirmwareFeatures</key>
@@ -420,7 +412,7 @@
 			<array>
 				<dict>
 					<key>Frequency</key>
-					<integer>1333</integer>
+					<integer>1600</integer>
 					<key>Size</key>
 					<integer>8192</integer>
 					<key>Slot</key>
@@ -432,7 +424,7 @@
 				</dict>
 				<dict>
 					<key>Frequency</key>
-					<integer>1333</integer>
+					<integer>1600</integer>
 					<key>Size</key>
 					<integer>8192</integer>
 					<key>Slot</key>
@@ -444,7 +436,7 @@
 				</dict>
 				<dict>
 					<key>Frequency</key>
-					<integer>1333</integer>
+					<integer>1600</integer>
 					<key>Size</key>
 					<integer>8192</integer>
 					<key>Slot</key>
@@ -456,7 +448,7 @@
 				</dict>
 				<dict>
 					<key>Frequency</key>
-					<integer>1333</integer>
+					<integer>1600</integer>
 					<key>Size</key>
 					<integer>8192</integer>
 					<key>Slot</key>
@@ -468,7 +460,7 @@
 				</dict>
 				<dict>
 					<key>Frequency</key>
-					<integer>1333</integer>
+					<integer>1600</integer>
 					<key>Size</key>
 					<integer>8192</integer>
 					<key>Slot</key>
@@ -480,7 +472,7 @@
 				</dict>
 				<dict>
 					<key>Frequency</key>
-					<integer>1333</integer>
+					<integer>1600</integer>
 					<key>Size</key>
 					<integer>8192</integer>
 					<key>Slot</key>
@@ -492,7 +484,7 @@
 				</dict>
 				<dict>
 					<key>Frequency</key>
-					<integer>1333</integer>
+					<integer>1600</integer>
 					<key>Size</key>
 					<integer>8192</integer>
 					<key>Slot</key>
@@ -504,7 +496,7 @@
 				</dict>
 				<dict>
 					<key>Frequency</key>
-					<integer>1333</integer>
+					<integer>1600</integer>
 					<key>Size</key>
 					<integer>8192</integer>
 					<key>Slot</key>

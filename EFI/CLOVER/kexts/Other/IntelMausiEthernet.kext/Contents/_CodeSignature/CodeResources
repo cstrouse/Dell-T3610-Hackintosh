@@ -3,33 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>files</key>
-	<dict>
-		<key>Resources/English.lproj/InfoPlist.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			0etBWOt5cXS2GRWSG3cHyiftdHs=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 	<key>files2</key>
-	<dict>
-		<key>Resources/English.lproj/InfoPlist.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			0etBWOt5cXS2GRWSG3cHyiftdHs=
-			</data>
-			<key>hash2</key>
-			<data>
-			8A5uIAPiwEuwY2IBvnTMP1LGbTowGpJsygIz5TayRY4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 	<key>rules</key>
 	<dict>
 		<key>^Resources/</key>
