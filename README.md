@@ -81,6 +81,8 @@ You should modify the EFI (a lot) if your system specs are different. I use the 
 - USB 3.0 (Inateck PCI-e card doesn't show up but works; probably need my patched DSDT updated for this to show up properly)
 - CPU Power Management
 
+![CPU Power Management](https://github.com/cstrouse/Dell-T3610-Hackintosh/blob/master/Screenshots/Intel%20Power%20Gadget.png)
+
 ## macOS Updates
 
 - 10.15.3 -> 10.15.4 worked without any issues
@@ -90,6 +92,10 @@ You should modify the EFI (a lot) if your system specs are different. I use the 
 - USB 3.0 (XHCI shows up in IOReg but requires work to get Renesas controller working)
 - Sidecar
 - sleep
+
+## Geek Bench
+
+![Geek Bench 5 scores](https://github.com/cstrouse/Dell-T3610-Hackintosh/blob/master/Screenshots/Geek%20Bench.png)
 
 ## How to create a bootable macOS Catalina USB install drive? (on MacOS)
 
