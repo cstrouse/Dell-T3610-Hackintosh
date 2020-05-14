@@ -86,6 +86,7 @@ You should modify the EFI (a lot) if your system specs are different. I use the 
 ## macOS Updates
 
 - 10.15.3 -> 10.15.4 worked without any issues
+- 10.15.4 supplemental update worked without any issues (applied 13-May-2020)
 
 ## What Doesn't Work (or hasn't been tested)
 
