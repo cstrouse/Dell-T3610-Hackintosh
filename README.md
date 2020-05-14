@@ -1,3 +1,7 @@
+# Dell Precision T3610 Workstation Hackintosh
+
+![avid_210_aaxe_tk_dell_t3610_6_core_turnkey_1421771782_1108909](https://user-images.githubusercontent.com/849044/81951966-b2890000-95ba-11ea-8ce0-c1b4c6510643.jpg)
+
 **Note: You're nothing but an a-hole if you sell EFI folder (config) that's readily available for free.** -- *stole this from mighil because it's right on*
 
 If this helps you, thank [mighil](https://github.com/mighildotcom) and [maldon](https://olarila.com) since they did the hard work (and the many others who gave us Clover, kexts, etc)!
