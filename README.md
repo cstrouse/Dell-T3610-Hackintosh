@@ -30,6 +30,7 @@ Clover EFI folder and `config.plist` required for a Dell Precision T3610 hackint
 |             | Samsung 8GB DDR3-1333MHz ECC x 4 (PN: M393B1K70DH0-CK0)
 | GPU         | ~~HP NVIDIA GK107GL Quadro K2000 2GB (ROM: v80.07.9b.00.07) - slot 1~~
 |             | MSI RX 570 GAMING X 8GB - slot 1
+| Display Cable | Rankie 4k DP to HDMI cable (CableMatters adapter didn't work well)
 | Storage     | PNY CS900 240GB SSD (Revision CS900J13) x2
 | Bluetooth   | ASUS USB-BT400 (Firmware: v14 c4096)
 | Ethernet    | Intel 82579LM (onboard)
@@ -117,5 +118,22 @@ You should modify the EFI (a lot) if your system specs are different. I use the 
 
 ![dell-gpu-power-cable](https://user-images.githubusercontent.com/849044/79437357-edc9ec00-7f86-11ea-9ff7-a2bf03c6dfc2.jpg)
 
-## If this helped you get your machine working or saved you time, consider sending a small donation to help me continue improving this and updating it over time via CashApp
+## If this helped you get your machine working or saved you time, consider sending a small donation to help me continue improving this and updating it over time via CashApp or buy parts you need from my affiliate links below
 ![$CaseyStrouse](https://user-images.githubusercontent.com/849044/80915564-f735b100-8d07-11ea-8654-bfc37fe0baa8.png)
+
+| | Product Name / Model | Amazon | Newegg
+| ---  | --- | --- | ---
+| Full PC | Dell Precision T3610 | https://amzn.to/3fQ3nFO
+| CPU | Intel Xeon E5-1620v2 | https://amzn.to/2WvfJvj | 
+| RAM | 64GB 4x16GB | https://amzn.to/3dILE1i
+| | 128GB 4x32GB | https://amzn.to/2yVMiK3
+| GPU | MSI RX 580 Gaming 8GB | https://amzn.to/3bvJ6Cd
+| | MSI RX 570 Gaming 8GB | https://amzn.to/3dWEC9t
+| GPU Power Cable | COMeap CPU 8 Pin Male to Dual 8 Pin(6+2) | https://amzn.to/2yW3sY0
+| SSD | PNY CS900 240GB SATA | https://amzn.to/3cviPVO
+| SSD Caddy | Dell SSD Caddy | https://amzn.to/3burWVC
+| Keyboard | Logitech MX Keys | https://amzn.to/2Z0VAyW
+| Mouse | Logitech M590 | https://amzn.to/3brNamN
+| Bluetooth | Asus BT-400 | https://amzn.to/2zxPDip
+| Display | TCL 43S421 4k TV | https://amzn.to/2LoO5tI
+| | LG 32" 32UL750-W 4k | https://amzn.to/2T3Vkvu
