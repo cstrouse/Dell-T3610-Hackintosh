@@ -130,6 +130,7 @@ You should modify the EFI (a lot) if your system specs are different. I use the 
 | GPU | MSI RX 580 Gaming 8GB | [Check Price](https://amzn.to/3bvJ6Cd)
 | | MSI RX 570 Gaming 8GB | [Check Price](https://amzn.to/3dWEC9t)
 | GPU Power Cable | COMeap CPU 8 Pin Male to Dual 8 Pin(6+2) | [Check Price](https://amzn.to/2yW3sY0)
+| PSU | Dell 80+ 685W | [Check Price](https://amzn.to/2WZsVI7)
 | SSD | PNY CS900 240GB SATA | [Check Price](https://amzn.to/3cviPVO)
 | SSD Caddy | Dell SSD Caddy | [Check Price](https://amzn.to/3burWVC)
 | Keyboard | Logitech MX Keys | [Check Price](https://amzn.to/2Z0VAyW)
