@@ -44,6 +44,8 @@ Clover EFI folder and `config.plist` required for a Dell Precision T3610 hackint
 
 ### BIOS Configuration
 
+You can find screenshots of the BIOS configuration options I used in [Screenshots/BIOS](Screenshots/BIOS).
+
 1. Reset to optimized defaults
 2. Secure Boot disabled
 3. Enable VT for Direct I/O disabled (Virtualization Support can be enabled if you need it for Docker, etc)
