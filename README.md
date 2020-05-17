@@ -83,10 +83,18 @@ You should modify the EFI (a lot) if your system specs are different. I use the 
 - sound (Intel HDA and ~~NVIDIA~~ Radeon HDMI)
 - 4k display
 - Docker
-- USB 3.0 (Inateck PCI-e card doesn't show up but works; probably need my patched DSDT updated for this to show up properly)
+- USB 3.0 (Inateck PCI-e card doesn't show up but works)
 - CPU Power Management
 
 ![CPU Power Management](https://github.com/cstrouse/Dell-T3610-Hackintosh/blob/master/Screenshots/Intel%20Power%20Gadget.png)
+
+## USB Mapping
+
+![T3610 rear](https://user-images.githubusercontent.com/849044/82134670-dad95000-97ae-11ea-8546-e4aa16d85e05.jpg)
+
+I recommend that you disable USB 3.0 ports in the BIOS and then use the USB injector kext from this repo or create your own using Hackintool. The left-most port on the front panel will no longer work but the others will work properly.
+
+If you add the Inateck USB 3.0 controller card like I did it will work OOB but will not show up as available USB ports in Hackintool or USBMap tool. The controller shows up as a PCIe device rather than a USB controller. Don't be alarmed by this as it will work correctly anyway.
 
 ## macOS Updates
 
