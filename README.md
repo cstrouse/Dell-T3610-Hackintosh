@@ -40,7 +40,7 @@ Clover EFI folder and `config.plist` required for a Dell Precision T3610 hackint
 | Keyboard    | ~~Microsoft Surface (connected via Bluetooth)~~
 |             | Logitech MX Keys (connected via Bluetooth)
 | Mouse       | Logitech M590 (connected using Logitech Unified receiver)
-| Clover      | 5116
+| Clover      | 5119
 
 ### BIOS Configuration
 
@@ -58,7 +58,7 @@ You can find screenshots of the BIOS configuration options I used in [Screenshot
 ## Readme
 
 - Read everything first and be careful
-- Tested on macOS Catalina 10.15.4 (vanilla)
+- Tested on macOS Catalina 10.15.5 (vanilla)
 
 ## Differences from the X79 guide
 
@@ -114,6 +114,7 @@ If you add the Inateck USB 3.0 controller card like I did it will work OOB but w
 
 - 10.15.3 -> 10.15.4 worked without any issues
 - 10.15.4 supplemental update worked without any issues (applied 13-May-2020)
+- 10.15.5 update worked without any issues (applied 14-June-2020); updated Lilu/WEG and then Clover first
 
 ## What Doesn't Work (or hasn't been tested)
 
