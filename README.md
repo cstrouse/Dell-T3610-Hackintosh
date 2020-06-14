@@ -16,7 +16,7 @@ Clover EFI folder and `config.plist` required for a Dell Precision T3610 hackint
 
 ## System Specs
 
-![Screen Shot 2020-04-17 at 7 54 53 PM](https://user-images.githubusercontent.com/849044/79626550-d05f6400-80e5-11ea-8757-69311dc8f5f1.png)
+![Screen Shot 2020-06-14 at 11 48 28 AM](https://user-images.githubusercontent.com/849044/84601501-61786000-ae35-11ea-814b-9c77ddd0f5c1.png)
 
 | Part        | Model Number
 | ---         | ---
