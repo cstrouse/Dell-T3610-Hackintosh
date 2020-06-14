@@ -44,6 +44,8 @@ Clover EFI folder and `config.plist` required for a Dell Precision T3610 hackint
 
 ### BIOS Configuration
 
+You can find screenshots of the BIOS configuration options I used in [Screenshots/BIOS](Screenshots/BIOS).
+
 1. Reset to optimized defaults
 2. Secure Boot disabled
 3. Enable VT for Direct I/O disabled (Virtualization Support can be enabled if you need it for Docker, etc)
@@ -90,9 +92,21 @@ You should modify the EFI (a lot) if your system specs are different. I use the 
 
 ## USB Mapping
 
-![T3610 rear](https://user-images.githubusercontent.com/849044/82134670-dad95000-97ae-11ea-8546-e4aa16d85e05.jpg)
+![T3610 USB Ports](https://user-images.githubusercontent.com/849044/82134977-92bc2c80-97b2-11ea-8b0e-b68577e47bd8.jpg)
 
-I recommend that you disable USB 3.0 ports in the BIOS and then use the USB injector kext from this repo or create your own using Hackintool. The left-most port on the front panel will no longer work but the others will work properly.
+| # | Port Name
+| --- | ---
+| 1 | HP12
+| 2 | HP11
+| 3 | HP13
+| 4 | HP16
+| 5 | HP15
+| 6 | unsupported
+| 7 | unsupported
+| 8 | unsupported
+| 9 | HP24
+
+I recommend that you disable USB 3.0 ports in the BIOS and then use the USB injector kext from this repo or create your own using Hackintool. The left-most port on the front panel will no longer work and the three on the bottom rear will no longer work. I was unable to get them to work properly with USB 3.0 enabled as the Renesas drivers don't work on Catalina.
 
 If you add the Inateck USB 3.0 controller card like I did it will work OOB but will not show up as available USB ports in Hackintool or USBMap tool. The controller shows up as a PCIe device rather than a USB controller. Don't be alarmed by this as it will work correctly anyway.
 
