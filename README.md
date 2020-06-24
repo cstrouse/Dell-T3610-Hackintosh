@@ -10,7 +10,7 @@ This is based on his [X79 Catalina guide](https://github.com/mighildotcom/X79-Ha
 
 # Budget Dell Precision T3610 Xeon Build (~$350)
 
-Clover EFI folder and `config.plist` required for a Dell Precision T3610 hackintosh running macOS Catalina 10.15.4.
+Clover EFI folder and `config.plist` required for a Dell Precision T3610 hackintosh running macOS Catalina 10.15.5.
 
 ![20200320_121001](https://user-images.githubusercontent.com/849044/77206086-17116c80-6aee-11ea-9084-9c27b42e7dae.jpg)
 
