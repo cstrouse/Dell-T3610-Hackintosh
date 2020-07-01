@@ -4,13 +4,13 @@
 
 **Note: You're nothing but an a-hole if you sell EFI folder (config) that's readily available for free.** -- *stole this from mighil because it's right on*
 
-If this helps you, thank [mighil](https://github.com/mighildotcom) and [maldon](https://olarila.com) since they did the hard work (and the many others who gave us Clover, kexts, etc)!
+If this helps you, thank [mighil](https://github.com/mighildotcom) and [maldon](https://olarila.com) since they did the hard work (and the many others who gave us Clover, OpenCore, kexts, etc)!
 
-This is based on his [X79 Catalina guide](https://github.com/mighildotcom/X79-Hackintosh-Catalina). Before finding this I had a usable machine but performance wasn't great. I improved things a bit by switching to Virtual SMC and ~~OcQuirks~~; the X79 guide took me the rest of the way (sans USB 3.0).
+This is based on his [X79 Catalina guide](https://github.com/mighildotcom/X79-Hackintosh-Catalina). Before finding this I had a usable machine but performance wasn't great. I improved things a bit by switching to OpenCore; the X79 guide took me the rest of the way.
 
 # Budget Dell Precision T3610 Xeon Build (~$350)
 
-Clover EFI folder and `config.plist` required for a Dell Precision T3610 hackintosh running macOS Catalina 10.15.5.
+Clover and OpenCore EFI folders required for a Dell Precision T3610 hackintosh running macOS Catalina 10.15.5.
 
 ![20200320_121001](https://user-images.githubusercontent.com/849044/77206086-17116c80-6aee-11ea-9084-9c27b42e7dae.jpg)
 
@@ -40,7 +40,7 @@ Clover EFI folder and `config.plist` required for a Dell Precision T3610 hackint
 | Keyboard    | ~~Microsoft Surface (connected via Bluetooth)~~
 |             | Logitech MX Keys (connected via Bluetooth)
 | Mouse       | Logitech M590 (connected using Logitech Unified receiver)
-| Clover      | 5119
+| Bootloader  | ~~Clover 5119~~ OpenCore 0.5.9
 
 ### BIOS Configuration
 
@@ -62,13 +62,19 @@ You can find screenshots of the BIOS configuration options I used in [Screenshot
 
 ## Differences from the X79 guide
 
-- VirtualSMC
-- ~~OCQuirks~~
-- Patched DSDT (from maldon @ olarila)
+- OpenCore
 
 ## Before You Proceed
 
-You should modify the EFI (a lot) if your system specs are different. I use the settings for my motherboard. My system has a Renesas USB 3.0 controller which is a pain in the ass to get to work (have yet to figure that out but supposedly it's possible). Chances are you'll have a different CPU at the very least which may require some changes. If you're not using an ~~NVIDIA~~ AMD GPU, expect a bunch of changes to be required, too. You'll also need to add SMBIOS information (serial number, board serial number, UUID) as they've been removed from my `config.plist` to protect my Apple ID.
+You should modify the EFI (a lot) if your system specs are different. I use the settings for my motherboard. My system has a Renesas USB 3.0 controller which is a pain in the ass to get to work (have yet to figure that out but supposedly it's possible). Chances are you'll have a different CPU at the very least which may require some changes. If you're not using an AMD GPU, expect a bunch of changes to be required, too. You'll also need to add SMBIOS information (serial number, board serial number, UUID) as they've been removed from my `config.plist` to protect my Apple ID.
+
+If you're using the Clover EFI, you shouldn't need to change much beyond adding SMBIOS details (serial number, etc).
+
+If you're using the OpenCore EFI, you'll need to change at least the following:
+
+- SMBIOS details (serial number, MLB, UUID)
+- CPU power management info for __YOUR__ processor (use Piker Alpha's [SSDT generator](https://github.com/Piker-Alpha/ssdtPRGen.sh)) to create appropriate power management settings for your hardware
+- USB mapping; I remove EUSB/USBE using the STA method in an SSDT rather than mapping since my USB injector kext that worked with Clover didn't work with OpenCore
 
 ## What Does Work
 
@@ -82,15 +88,17 @@ You should modify the EFI (a lot) if your system specs are different. I use the 
 - ethernet (onboard)
 - bluetooth (added via USB dongle)
 - GPU
-- sound (Intel HDA and ~~NVIDIA~~ Radeon HDMI)
+- sound (Intel HDA and Radeon HDMI)
 - 4k display
 - Docker
 - USB 3.0 (Inateck PCI-e card doesn't show up but works)
 - CPU Power Management
 
-![CPU Power Management](https://github.com/cstrouse/Dell-T3610-Hackintosh/blob/master/Screenshots/Intel%20Power%20Gadget.png)
+![CPU Power Management](Screenshots/Intel%20Power%20Gadget.png)
 
 ## USB Mapping
+
+> __NOTE__: I stopped using the USB mapping in favor of an SSDT and this section no longer applies.
 
 ![T3610 USB Ports](https://user-images.githubusercontent.com/849044/82134977-92bc2c80-97b2-11ea-8b0e-b68577e47bd8.jpg)
 
@@ -124,7 +132,7 @@ If you add the Inateck USB 3.0 controller card like I did it will work OOB but w
 
 ## Geek Bench
 
-![Geek Bench 5 scores](https://github.com/cstrouse/Dell-T3610-Hackintosh/blob/master/Screenshots/Geek%20Bench.png)
+![Geek Bench 5 scores](Screenshots/Geek%20Bench.png)
 
 ## How to create a bootable macOS Catalina USB install drive? (on MacOS)
 
