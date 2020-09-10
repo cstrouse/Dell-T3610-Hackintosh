@@ -1,3 +1,5 @@
+> ### :warning: I no longer have this machine so active updates to either the Clover or OC EFIs is unlikely. That being said, if you have any issues with using it or with your Precision Workstation feel free to email or open an issue and I'll gladly try to help you.
+
 # Dell Precision T3610 Workstation Hackintosh
 
 ![avid_210_aaxe_tk_dell_t3610_6_core_turnkey_1421771782_1108909](https://user-images.githubusercontent.com/849044/81951966-b2890000-95ba-11ea-8ce0-c1b4c6510643.jpg)
