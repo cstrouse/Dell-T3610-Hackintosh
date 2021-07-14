@@ -12,7 +12,7 @@ This is based on his [X79 Catalina guide](https://github.com/mighildotcom/X79-Ha
 
 # Budget Dell Precision T3610 Xeon Build (~$350)
 
-Clover and OpenCore EFI folders required for a Dell Precision T3610 hackintosh running macOS Catalina 10.15.5.
+Clover and OpenCore EFI folders required for a Dell Precision T3610 hackintosh running macOS Catalina (up to 10.15.7) or Big Sur (up to 11.4).
 
 ![20200320_121001](https://user-images.githubusercontent.com/849044/77206086-17116c80-6aee-11ea-9084-9c27b42e7dae.jpg)
 
@@ -60,7 +60,7 @@ You can find screenshots of the BIOS configuration options I used in [Screenshot
 ## Readme
 
 - Read everything first and be careful
-- Tested on macOS Catalina 10.15.5 (vanilla)
+- Tested on macOS Catalina 10.15.5 (vanilla) and Big Sur 11.4 (vanilla)
 
 ## Differences from the X79 guide
 
@@ -76,7 +76,7 @@ If you're using the OpenCore EFI, you'll need to change at least the following:
 
 - SMBIOS details (serial number, MLB, UUID)
 - CPU power management info for __YOUR__ processor (use Piker Alpha's [SSDT generator](https://github.com/Piker-Alpha/ssdtPRGen.sh)) to create appropriate power management settings for your hardware
-- USB mapping; I remove EUSB/USBE using the STA method in an SSDT rather than mapping since my USB injector kext that worked with Clover didn't work with OpenCore
+- USB mapping; Requires resetting RHUB and a few renames
 
 ## What Does Work
 
@@ -93,14 +93,14 @@ If you're using the OpenCore EFI, you'll need to change at least the following:
 - sound (Intel HDA and Radeon HDMI)
 - 4k display
 - Docker
-- USB 3.0 (Inateck PCI-e card doesn't show up but works)
+- USB 3.0
 - CPU Power Management
 
 ![CPU Power Management](Screenshots/Intel%20Power%20Gadget.png)
 
 ## USB Mapping
 
-> __NOTE__: I stopped using the USB mapping in favor of an SSDT and this section no longer applies.
+> __NOTE__: This section is outdated and not very useful currently so have a look at the SSDTs and USB injector kext in the latest EFI for how I find best to approach port mapping with current OC and Big Sur.
 
 ![T3610 USB Ports](https://user-images.githubusercontent.com/849044/82134977-92bc2c80-97b2-11ea-8b0e-b68577e47bd8.jpg)
 
@@ -125,12 +125,13 @@ If you add the Inateck USB 3.0 controller card like I did it will work OOB but w
 - 10.15.3 -> 10.15.4 worked without any issues
 - 10.15.4 supplemental update worked without any issues (applied 13-May-2020)
 - 10.15.5 update worked without any issues (applied 14-June-2020); updated Lilu/WEG and then Clover first
+- updated OC to 0.7.0, refactored the USB mapping situation, and upgraded to Big Sur 11.4 without any issues
 
 ## What Doesn't Work (or hasn't been tested)
 
-- USB 3.0 (XHCI shows up in IOReg but requires work to get Renesas controller working)
+~~- USB 3.0 (XHCI shows up in IOReg but requires work to get Renesas controller working)~~
 - Sidecar
-- sleep
+~~- sleep~~
 
 ## Geek Bench
 
